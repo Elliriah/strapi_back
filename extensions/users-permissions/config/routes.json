@@ -1,0 +1,49 @@
+{
+    "routes": [
+    {
+      "method": "GET",
+      "path": "/users/me/books/:user",
+      "handler": "User.getUserBooks",
+      "config": {
+        "policies": [],
+        "prefix": "",
+        "description": "description",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User",
+          "actionType": "find"
+        }
+      }
+    },
+    {
+        "method": "GET",
+        "path": "/users/me/film/:user",
+        "handler": "User.getUserFilm",
+        "config": {
+          "policies": [],
+          "prefix": "",
+          "description": "description",
+          "tag": {
+            "plugin": "users-permissions",
+            "name": "User",
+            "actionType": "find"
+          }
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/users/me/serie/:user",
+        "handler": "User.getUserSerie",
+        "config": {
+          "policies": [],
+          "prefix": "",
+          "description": "description",
+          "tag": {
+            "plugin": "users-permissions",
+            "name": "User",
+            "actionType": "find"
+          }
+        }
+      }
+    ]
+}

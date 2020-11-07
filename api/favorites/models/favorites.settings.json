@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Favorites",
+  "info": {
+    "name": "Favorites",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "book": {
+      "model": "books"
+    },
+    "user": {
+      "type": "biginteger",
+      "unique": false,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    }
+  }
+}
